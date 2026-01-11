@@ -1,81 +1,71 @@
 # db.py
-import psycopg2
 import os
+from supabase import create_client, Client
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
-def get_conn():
-    if not DATABASE_URL:
-        raise RuntimeError("DATABASE_URL not set")
-    return psycopg2.connect(DATABASE_URL)
+_supabase: Client | None = None
 
+def get_supabase() -> Client | None:
+    global _supabase
+    if _supabase is None:
+        if not SUPABASE_URL or not SUPABASE_KEY:
+            print("⚠️ Supabase env vars not set")
+            return None
+        _supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+    return _supabase
+
+
+# ---------- DATA ACCESS LAYER ----------
 
 def get_students():
-    try:
-        with get_conn() as conn:
-            with conn.cursor() as cur:
-                cur.execute(
-                    "SELECT id, full_name, course FROM students LIMIT 50;"
-                )
-                return cur.fetchall()
-    except Exception as e:
-        print("DB error in get_students:", e)
+    sb = get_supabase()
+    if not sb:
         return []
+    return sb.table("students") \
+        .select("id, full_name, course") \
+        .limit(50) \
+        .execute().data
 
 
 def get_risks():
-    try:
-        with get_conn() as conn:
-            with conn.cursor() as cur:
-                cur.execute(
-                    "SELECT student_id, risk_score FROM risk_scores;"
-                )
-                return cur.fetchall()
-    except Exception as e:
-        print("DB error in get_risks:", e)
+    sb = get_supabase()
+    if not sb:
         return []
+    return sb.table("risk_scores") \
+        .select("student_id, risk_score") \
+        .execute().data
 
 
 def get_features(student_id):
-    try:
-        with get_conn() as conn:
-            with conn.cursor() as cur:
-                cur.execute("""
-                    SELECT week, avg_session_time, videos_completed
-                    FROM weekly_features
-                    WHERE student_id = %s
-                    ORDER BY week;
-                """, (student_id,))
-                return cur.fetchall()
-    except Exception as e:
-        print("DB error in get_features:", e)
+    sb = get_supabase()
+    if not sb:
         return []
+    return sb.table("weekly_features") \
+        .select("week, avg_session_time, videos_completed") \
+        .eq("student_id", student_id) \
+        .order("week") \
+        .execute().data
 
 
 def get_interventions(student_id):
-    try:
-        with get_conn() as conn:
-            with conn.cursor() as cur:
-                cur.execute("""
-                    SELECT action, created_at
-                    FROM interventions
-                    WHERE student_id = %s
-                    ORDER BY created_at DESC;
-                """, (student_id,))
-                return cur.fetchall()
-    except Exception as e:
-        print("DB error in get_interventions:", e)
+    sb = get_supabase()
+    if not sb:
         return []
+    return sb.table("interventions") \
+        .select("action, created_at") \
+        .eq("student_id", student_id) \
+        .order("created_at", desc=True) \
+        .execute().data
 
 
 def add_intervention(student_id, action, note):
-    try:
-        with get_conn() as conn:
-            with conn.cursor() as cur:
-                cur.execute("""
-                    INSERT INTO interventions (student_id, action, note)
-                    VALUES (%s, %s, %s);
-                """, (student_id, action, note))
-                conn.commit()
-    except Exception as e:
-        print("DB error in add_intervention:", e)
+    sb = get_supabase()
+    if not sb:
+        return
+    sb.table("interventions").insert({
+        "student_id": student_id,
+        "action": action,
+        "note": note
+    }).execute()
