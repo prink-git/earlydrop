@@ -1,10 +1,17 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+import os
 import pandas as pd
 import joblib
 from supabase import create_client
-from sklearn.ensemble import IsolationForest   
+from sklearn.ensemble import IsolationForest
 
-SUPABASE_URL = "https://lqzvxxhwpirjowkqwjys.supabase.co"
-SUPABASE_KEY = "sb_secret_G2P7kak0XO54kQcrAqvBgA_1FwmxgZ2"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+if not SUPABASE_URL or not SUPABASE_KEY:
+    raise RuntimeError("Supabase env vars not set")
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
@@ -25,12 +32,10 @@ def main():
         contamination=0.15,
         random_state=42
     )
-
     model.fit(X)
 
     joblib.dump(model, "anomaly_model.pkl")
-
-    print("✅ Anomaly detection model trained & saved")
+    print("✅ Model trained & saved")
 
 if __name__ == "__main__":
     main()

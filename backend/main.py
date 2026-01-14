@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -24,9 +27,11 @@ class ActionPayload(BaseModel):
     action: str
     note: str | None = ""
 
+
 @app.get("/")
 def home():
     return {"message": "EarlyDrop backend is running 🚀"}
+
 
 @app.get("/health")
 def health():
@@ -34,23 +39,16 @@ def health():
 
 
 @app.get("/students")
-def get_students_api():
+def students():
     students = get_students()
     risks = get_risks()
 
-    risk_map = {
-        r["student_id"]: r["risk_score"] for r in risks
-    }
+    risk_map = {r["student_id"]: r["risk_score"] for r in risks}
 
     result = []
     for s in students:
         score = risk_map.get(s["id"], 0)
-
-        level = (
-            "High" if score >= 70
-            else "Medium" if score >= 40
-            else "Low"
-        )
+        level = "High" if score >= 70 else "Medium" if score >= 40 else "Low"
 
         result.append({
             "id": s["id"],
@@ -64,22 +62,15 @@ def get_students_api():
 
 
 @app.get("/students/{student_id}/timeline")
-def student_timeline(student_id: str):
+def timeline(student_id: str):
     return {
         "engagement": get_features(student_id),
-        "risk": [
-            r for r in get_risks()
-            if r["student_id"] == student_id
-        ],
+        "risk": [r for r in get_risks() if r["student_id"] == student_id],
         "interventions": get_interventions(student_id)
     }
 
 
 @app.post("/students/{student_id}/action")
 def take_action(student_id: str, payload: ActionPayload):
-    add_intervention(
-        student_id,
-        payload.action,
-        payload.note or ""
-    )
+    add_intervention(student_id, payload.action, payload.note or "")
     return {"status": "ok"}

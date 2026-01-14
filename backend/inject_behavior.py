@@ -1,8 +1,12 @@
+import os
 import random
 from supabase import create_client
 
-SUPABASE_URL = "https://lqzvxxhwpirjowkqwjys.supabase.co"
-SUPABASE_KEY = "sb_secret_G2P7kak0XO54kQcrAqvBgA_1FwmxgZ2"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+if not SUPABASE_URL or not SUPABASE_KEY:
+    raise RuntimeError("Supabase env vars not set")
 
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
@@ -11,9 +15,9 @@ random.shuffle(students)
 
 n = len(students)
 
-high = students[: int(0.2 * n)]           # 🔴 20% critical
-medium = students[int(0.2*n):int(0.45*n)] # 🟡 25% slipping
-low = students[int(0.45*n):]              # 🟢 rest healthy
+high = students[: int(0.2 * n)]
+medium = students[int(0.2 * n): int(0.45 * n)]
+low = students[int(0.45 * n):]
 
 def update(student_ids, profile):
     for s in student_ids:
@@ -22,7 +26,6 @@ def update(student_ids, profile):
             .eq("student_id", s["id"]) \
             .execute()
 
-# 🔴 HIGH RISK – almost dropped
 update(high, {
     "avg_session_time": 4,
     "videos_completed": 0,
@@ -31,7 +34,6 @@ update(high, {
     "gap_variance": 9
 })
 
-# 🟡 MEDIUM – slowly disengaging
 update(medium, {
     "avg_session_time": 15,
     "videos_completed": 2,
@@ -40,7 +42,6 @@ update(medium, {
     "gap_variance": 4
 })
 
-# 🟢 LOW – healthy learners
 update(low, {
     "avg_session_time": 35,
     "videos_completed": 6,

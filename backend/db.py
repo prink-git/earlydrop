@@ -1,48 +1,32 @@
-# db.py
+from dotenv import load_dotenv
+load_dotenv()
+
 import os
-from supabase import create_client, Client
+from supabase import create_client
 
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
-_supabase: Client | None = None
+if not SUPABASE_URL or not SUPABASE_KEY:
+    raise RuntimeError("Supabase env vars not set")
 
-def get_supabase() -> Client | None:
-    global _supabase
-    if _supabase is None:
-        if not SUPABASE_URL or not SUPABASE_KEY:
-            print("⚠️ Supabase env vars not set")
-            return None
-        _supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-    return _supabase
+supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
-
-# ---------- DATA ACCESS LAYER ----------
 
 def get_students():
-    sb = get_supabase()
-    if not sb:
-        return []
-    return sb.table("students") \
+    return supabase.table("students") \
         .select("id, full_name, course") \
-        .limit(50) \
         .execute().data
 
 
 def get_risks():
-    sb = get_supabase()
-    if not sb:
-        return []
-    return sb.table("risk_scores") \
+    return supabase.table("risk_scores") \
         .select("student_id, risk_score") \
         .execute().data
 
 
 def get_features(student_id):
-    sb = get_supabase()
-    if not sb:
-        return []
-    return sb.table("weekly_features") \
+    return supabase.table("weekly_features") \
         .select("week, avg_session_time, videos_completed") \
         .eq("student_id", student_id) \
         .order("week") \
@@ -50,10 +34,7 @@ def get_features(student_id):
 
 
 def get_interventions(student_id):
-    sb = get_supabase()
-    if not sb:
-        return []
-    return sb.table("interventions") \
+    return supabase.table("interventions") \
         .select("action, created_at") \
         .eq("student_id", student_id) \
         .order("created_at", desc=True) \
@@ -61,10 +42,7 @@ def get_interventions(student_id):
 
 
 def add_intervention(student_id, action, note):
-    sb = get_supabase()
-    if not sb:
-        return
-    sb.table("interventions").insert({
+    supabase.table("interventions").insert({
         "student_id": student_id,
         "action": action,
         "note": note
