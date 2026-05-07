@@ -1,0 +1,245 @@
+student_id,action,note,created_at
+1,SMS reminder,One-on-one tutoring offered,2026-04-30T17:41:32.378786Z
+1,Email sent,One-on-one tutoring offered,2026-04-23T17:41:32.378786Z
+2,Call placed,One-on-one tutoring offered,2026-04-16T17:41:32.378786Z
+5,Call placed,Follow-up scheduled,2026-05-06T17:41:32.378786Z
+5,Meeting scheduled,Left voicemail,2026-04-23T17:41:32.378786Z
+8,Email sent,Escalated to advisor,2026-04-21T17:41:32.378786Z
+9,Call placed,Left voicemail,2026-04-09T17:41:32.378786Z
+12,Email sent,,2026-04-10T17:41:32.378786Z
+12,SMS reminder,Escalated to advisor,2026-04-08T17:41:32.378786Z
+13,Meeting scheduled,Left voicemail,2026-04-13T17:41:32.378786Z
+14,Call placed,Follow-up scheduled,2026-05-04T17:41:32.378786Z
+17,Email sent,One-on-one tutoring offered,2026-04-16T17:41:32.378786Z
+19,Meeting scheduled,,2026-04-11T17:41:32.378786Z
+20,Email sent,Counseling referral made,2026-04-24T17:41:32.378786Z
+25,Call placed,Follow-up scheduled,2026-05-06T17:41:32.378786Z
+26,SMS reminder,,2026-04-18T17:41:32.378786Z
+26,Call placed,Left voicemail,2026-04-07T17:41:32.378786Z
+29,SMS reminder,Left voicemail,2026-04-07T17:41:32.378786Z
+29,Meeting scheduled,One-on-one tutoring offered,2026-04-29T17:41:32.378786Z
+35,Call placed,Escalated to advisor,2026-04-18T17:41:32.378786Z
+37,SMS reminder,,2026-04-27T17:41:32.378786Z
+39,Call placed,One-on-one tutoring offered,2026-04-18T17:41:32.378786Z
+46,Meeting scheduled,Escalated to advisor,2026-04-10T17:41:32.378786Z
+51,SMS reminder,Follow-up scheduled,2026-04-13T17:41:32.378786Z
+55,SMS reminder,,2026-04-11T17:41:32.378786Z
+56,Call placed,Escalated to advisor,2026-04-09T17:41:32.378786Z
+58,SMS reminder,Follow-up scheduled,2026-04-30T17:41:32.378786Z
+60,SMS reminder,Counseling referral made,2026-04-10T17:41:32.378786Z
+61,Call placed,Counseling referral made,2026-05-07T17:41:32.378786Z
+61,SMS reminder,Left voicemail,2026-04-20T17:41:32.378786Z
+63,SMS reminder,One-on-one tutoring offered,2026-04-19T17:41:32.378786Z
+65,Email sent,Left voicemail,2026-04-24T17:41:32.378786Z
+66,SMS reminder,,2026-04-21T17:41:32.378786Z
+68,Email sent,One-on-one tutoring offered,2026-04-30T17:41:32.378786Z
+68,Call placed,Left voicemail,2026-05-06T17:41:32.378786Z
+69,SMS reminder,Follow-up scheduled,2026-04-26T17:41:32.378786Z
+69,Email sent,,2026-04-09T17:41:32.378786Z
+72,SMS reminder,Follow-up scheduled,2026-04-27T17:41:32.378786Z
+72,Email sent,Follow-up scheduled,2026-04-12T17:41:32.378786Z
+73,Meeting scheduled,One-on-one tutoring offered,2026-04-26T17:41:32.378786Z
+75,Call placed,,2026-04-19T17:41:32.378786Z
+82,Call placed,One-on-one tutoring offered,2026-04-14T17:41:32.378786Z
+85,Meeting scheduled,One-on-one tutoring offered,2026-05-01T17:41:32.378786Z
+86,Call placed,Escalated to advisor,2026-05-04T17:41:32.378786Z
+90,SMS reminder,Follow-up scheduled,2026-05-06T17:41:32.378786Z
+90,Email sent,Follow-up scheduled,2026-05-02T17:41:32.378786Z
+91,Call placed,Follow-up scheduled,2026-04-22T17:41:32.378786Z
+92,Email sent,,2026-04-10T17:41:32.378786Z
+102,Email sent,One-on-one tutoring offered,2026-05-05T17:41:32.378786Z
+102,SMS reminder,Escalated to advisor,2026-05-01T17:41:32.378786Z
+103,Call placed,,2026-04-26T17:41:32.378786Z
+105,Meeting scheduled,Escalated to advisor,2026-05-07T17:41:32.378786Z
+105,SMS reminder,,2026-04-13T17:41:32.378786Z
+106,Meeting scheduled,One-on-one tutoring offered,2026-05-06T17:41:32.378786Z
+109,Call placed,Escalated to advisor,2026-04-24T17:41:32.378786Z
+110,Email sent,One-on-one tutoring offered,2026-05-05T17:41:32.378786Z
+111,Email sent,Left voicemail,2026-04-18T17:41:32.378786Z
+113,Call placed,Follow-up scheduled,2026-04-10T17:41:32.378786Z
+119,SMS reminder,,2026-05-04T17:41:32.378786Z
+120,Meeting scheduled,Left voicemail,2026-04-22T17:41:32.378786Z
+124,Email sent,One-on-one tutoring offered,2026-04-19T17:41:32.378786Z
+124,Email sent,Follow-up scheduled,2026-04-17T17:41:32.378786Z
+125,Call placed,,2026-04-26T17:41:32.378786Z
+134,Call placed,Counseling referral made,2026-04-14T17:41:32.378786Z
+136,Email sent,Left voicemail,2026-04-29T17:41:32.378786Z
+136,SMS reminder,One-on-one tutoring offered,2026-05-01T17:41:32.378786Z
+138,SMS reminder,,2026-04-16T17:41:32.378786Z
+148,Meeting scheduled,,2026-04-12T17:41:32.387481Z
+150,Meeting scheduled,,2026-04-07T17:41:32.387481Z
+150,Email sent,One-on-one tutoring offered,2026-04-22T17:41:32.387481Z
+151,SMS reminder,,2026-04-18T17:41:32.387481Z
+160,Meeting scheduled,Follow-up scheduled,2026-05-01T17:41:32.387481Z
+161,Email sent,One-on-one tutoring offered,2026-04-17T17:41:32.387481Z
+161,SMS reminder,One-on-one tutoring offered,2026-05-07T17:41:32.387481Z
+162,SMS reminder,Left voicemail,2026-04-24T17:41:32.387481Z
+163,Email sent,Follow-up scheduled,2026-04-14T17:41:32.387481Z
+166,Email sent,Left voicemail,2026-04-18T17:41:32.387481Z
+166,Call placed,One-on-one tutoring offered,2026-05-01T17:41:32.387481Z
+168,Meeting scheduled,Left voicemail,2026-04-26T17:41:32.387481Z
+168,Call placed,Escalated to advisor,2026-04-29T17:41:32.387481Z
+169,Meeting scheduled,Follow-up scheduled,2026-04-23T17:41:32.387481Z
+169,Email sent,Escalated to advisor,2026-04-29T17:41:32.387481Z
+170,Email sent,Left voicemail,2026-04-16T17:41:32.387481Z
+172,Email sent,Follow-up scheduled,2026-05-03T17:41:32.387481Z
+172,SMS reminder,Left voicemail,2026-05-05T17:41:32.387481Z
+174,Email sent,Follow-up scheduled,2026-04-28T17:41:32.387481Z
+174,Meeting scheduled,Left voicemail,2026-05-05T17:41:32.387481Z
+175,Meeting scheduled,,2026-05-06T17:41:32.387481Z
+176,Call placed,Counseling referral made,2026-05-03T17:41:32.387481Z
+177,Email sent,Escalated to advisor,2026-04-21T17:41:32.387481Z
+178,Email sent,Counseling referral made,2026-04-30T17:41:32.387481Z
+179,Email sent,Escalated to advisor,2026-04-28T17:41:32.387481Z
+179,SMS reminder,,2026-04-23T17:41:32.387481Z
+183,Call placed,Left voicemail,2026-04-19T17:41:32.387481Z
+184,Meeting scheduled,Escalated to advisor,2026-04-11T17:41:32.387481Z
+185,SMS reminder,Left voicemail,2026-04-21T17:41:32.387481Z
+186,SMS reminder,Follow-up scheduled,2026-04-20T17:41:32.387481Z
+189,Meeting scheduled,One-on-one tutoring offered,2026-04-08T17:41:32.387481Z
+193,SMS reminder,Left voicemail,2026-04-10T17:41:32.387481Z
+193,SMS reminder,Escalated to advisor,2026-04-17T17:41:32.387481Z
+198,SMS reminder,Escalated to advisor,2026-04-19T17:41:32.387481Z
+203,SMS reminder,Escalated to advisor,2026-04-29T17:41:32.387481Z
+204,Call placed,One-on-one tutoring offered,2026-05-04T17:41:32.387481Z
+205,SMS reminder,Follow-up scheduled,2026-04-11T17:41:32.387481Z
+206,SMS reminder,Counseling referral made,2026-04-20T17:41:32.387481Z
+208,SMS reminder,,2026-05-07T17:41:32.387481Z
+217,SMS reminder,Escalated to advisor,2026-04-12T17:41:32.387481Z
+219,Meeting scheduled,Escalated to advisor,2026-04-10T17:41:32.387481Z
+222,Meeting scheduled,,2026-05-03T17:41:32.387481Z
+224,SMS reminder,One-on-one tutoring offered,2026-04-13T17:41:32.387481Z
+225,Call placed,One-on-one tutoring offered,2026-04-29T17:41:32.387481Z
+227,SMS reminder,Escalated to advisor,2026-04-09T17:41:32.387481Z
+228,Meeting scheduled,Left voicemail,2026-04-21T17:41:32.387481Z
+230,Meeting scheduled,One-on-one tutoring offered,2026-04-18T17:41:32.387481Z
+234,SMS reminder,Escalated to advisor,2026-04-18T17:41:32.387481Z
+235,SMS reminder,Counseling referral made,2026-04-15T17:41:32.387481Z
+235,Call placed,One-on-one tutoring offered,2026-04-09T17:41:32.387481Z
+237,Email sent,One-on-one tutoring offered,2026-04-24T17:41:32.387481Z
+239,SMS reminder,One-on-one tutoring offered,2026-04-16T17:41:32.387481Z
+240,Email sent,Left voicemail,2026-04-27T17:41:32.387481Z
+243,Meeting scheduled,One-on-one tutoring offered,2026-04-24T17:41:32.387481Z
+243,Call placed,Escalated to advisor,2026-04-18T17:41:32.387481Z
+244,Email sent,One-on-one tutoring offered,2026-04-28T17:41:32.387481Z
+247,Meeting scheduled,One-on-one tutoring offered,2026-05-03T17:41:32.387481Z
+248,Call placed,Escalated to advisor,2026-05-01T17:41:32.387481Z
+249,SMS reminder,Escalated to advisor,2026-04-07T17:41:32.387481Z
+251,SMS reminder,Follow-up scheduled,2026-04-22T17:41:32.387481Z
+252,Email sent,Follow-up scheduled,2026-04-27T17:41:32.387481Z
+252,SMS reminder,Escalated to advisor,2026-04-27T17:41:32.387481Z
+254,SMS reminder,Escalated to advisor,2026-04-18T17:41:32.387481Z
+255,SMS reminder,One-on-one tutoring offered,2026-04-12T17:41:32.387481Z
+255,Meeting scheduled,Follow-up scheduled,2026-04-24T17:41:32.387481Z
+256,Meeting scheduled,Left voicemail,2026-04-26T17:41:32.387481Z
+256,Call placed,,2026-04-10T17:41:32.387481Z
+257,Call placed,Counseling referral made,2026-05-06T17:41:32.387481Z
+259,SMS reminder,Follow-up scheduled,2026-04-28T17:41:32.387481Z
+260,Email sent,Follow-up scheduled,2026-04-21T17:41:32.387481Z
+260,Call placed,,2026-05-06T17:41:32.387481Z
+264,Call placed,Counseling referral made,2026-04-27T17:41:32.387481Z
+264,Meeting scheduled,Follow-up scheduled,2026-04-17T17:41:32.387481Z
+265,Call placed,Counseling referral made,2026-04-30T17:41:32.387481Z
+268,Meeting scheduled,Follow-up scheduled,2026-04-16T17:41:32.387481Z
+269,Email sent,Counseling referral made,2026-04-19T17:41:32.387481Z
+270,SMS reminder,,2026-04-16T17:41:32.387481Z
+270,Email sent,Follow-up scheduled,2026-05-06T17:41:32.387481Z
+272,Meeting scheduled,Counseling referral made,2026-05-05T17:41:32.387481Z
+279,Meeting scheduled,,2026-04-16T17:41:32.387481Z
+280,Meeting scheduled,Counseling referral made,2026-04-24T17:41:32.387481Z
+285,Meeting scheduled,Counseling referral made,2026-04-20T17:41:32.387481Z
+286,Meeting scheduled,,2026-04-07T17:41:32.387481Z
+291,Call placed,Counseling referral made,2026-05-04T17:41:32.387481Z
+291,Call placed,One-on-one tutoring offered,2026-04-24T17:41:32.387481Z
+293,SMS reminder,Left voicemail,2026-04-14T17:41:32.387481Z
+299,Call placed,One-on-one tutoring offered,2026-04-28T17:41:32.387481Z
+302,SMS reminder,Escalated to advisor,2026-04-10T17:41:32.387481Z
+306,Meeting scheduled,One-on-one tutoring offered,2026-04-18T17:41:32.387481Z
+307,Call placed,Left voicemail,2026-04-23T17:41:32.387481Z
+309,Email sent,,2026-04-15T17:41:32.387481Z
+312,SMS reminder,Counseling referral made,2026-04-19T17:41:32.387481Z
+317,SMS reminder,One-on-one tutoring offered,2026-04-11T17:41:32.387481Z
+317,Meeting scheduled,Counseling referral made,2026-04-18T17:41:32.387481Z
+318,Meeting scheduled,Follow-up scheduled,2026-04-12T17:41:32.387481Z
+320,Call placed,Escalated to advisor,2026-04-17T17:41:32.387481Z
+322,Email sent,Left voicemail,2026-04-17T17:41:32.387481Z
+324,Email sent,Counseling referral made,2026-04-07T17:41:32.387481Z
+327,Call placed,One-on-one tutoring offered,2026-04-24T17:41:32.387481Z
+328,Email sent,Follow-up scheduled,2026-04-16T17:41:32.387481Z
+329,Meeting scheduled,Left voicemail,2026-04-19T17:41:32.387481Z
+329,Meeting scheduled,Left voicemail,2026-04-16T17:41:32.387481Z
+330,Meeting scheduled,Escalated to advisor,2026-04-25T17:41:32.387481Z
+333,Meeting scheduled,One-on-one tutoring offered,2026-05-01T17:41:32.387481Z
+333,Meeting scheduled,One-on-one tutoring offered,2026-04-15T17:41:32.387481Z
+336,Email sent,Left voicemail,2026-04-21T17:41:32.387481Z
+336,Call placed,One-on-one tutoring offered,2026-04-08T17:41:32.387481Z
+338,SMS reminder,One-on-one tutoring offered,2026-04-21T17:41:32.387481Z
+340,SMS reminder,Escalated to advisor,2026-04-19T17:41:32.387481Z
+340,Call placed,,2026-04-12T17:41:32.387481Z
+341,SMS reminder,,2026-04-13T17:41:32.387481Z
+341,Call placed,,2026-04-25T17:41:32.387481Z
+342,SMS reminder,One-on-one tutoring offered,2026-04-21T17:41:32.387481Z
+344,Email sent,Escalated to advisor,2026-04-27T17:41:32.387481Z
+346,Call placed,,2026-04-14T17:41:32.387481Z
+349,SMS reminder,Left voicemail,2026-04-07T17:41:32.387481Z
+355,SMS reminder,Left voicemail,2026-04-09T17:41:32.387481Z
+355,SMS reminder,Escalated to advisor,2026-05-02T17:41:32.387481Z
+359,Call placed,One-on-one tutoring offered,2026-04-29T17:41:32.387481Z
+365,Email sent,Counseling referral made,2026-04-21T17:41:32.387481Z
+367,Email sent,Escalated to advisor,2026-04-24T17:41:32.387481Z
+367,SMS reminder,,2026-05-04T17:41:32.387481Z
+370,SMS reminder,Follow-up scheduled,2026-04-20T17:41:32.387481Z
+377,Call placed,One-on-one tutoring offered,2026-04-24T17:41:32.387481Z
+378,Meeting scheduled,Left voicemail,2026-04-10T17:41:32.387481Z
+381,SMS reminder,Left voicemail,2026-05-01T17:41:32.387481Z
+385,Email sent,,2026-04-11T17:41:32.387481Z
+385,Call placed,Follow-up scheduled,2026-05-06T17:41:32.387481Z
+391,SMS reminder,Counseling referral made,2026-04-11T17:41:32.387481Z
+392,SMS reminder,Counseling referral made,2026-04-18T17:41:32.387481Z
+394,Call placed,Follow-up scheduled,2026-04-15T17:41:32.387481Z
+396,Call placed,Follow-up scheduled,2026-04-07T17:41:32.387481Z
+400,Meeting scheduled,Follow-up scheduled,2026-04-28T17:41:32.387481Z
+400,Email sent,,2026-04-22T17:41:32.387481Z
+402,SMS reminder,Follow-up scheduled,2026-04-30T17:41:32.387481Z
+407,Meeting scheduled,Follow-up scheduled,2026-04-25T17:41:32.387481Z
+411,Call placed,Follow-up scheduled,2026-04-28T17:41:32.387481Z
+411,Call placed,Left voicemail,2026-04-07T17:41:32.387481Z
+412,Email sent,Escalated to advisor,2026-04-30T17:41:32.387481Z
+416,Meeting scheduled,One-on-one tutoring offered,2026-04-24T17:41:32.387481Z
+422,SMS reminder,Escalated to advisor,2026-04-21T17:41:32.387481Z
+422,Email sent,One-on-one tutoring offered,2026-04-13T17:41:32.387481Z
+431,Call placed,,2026-05-06T17:41:32.387481Z
+433,Email sent,Follow-up scheduled,2026-05-07T17:41:32.387481Z
+434,SMS reminder,,2026-04-10T17:41:32.387481Z
+435,Call placed,Counseling referral made,2026-04-22T17:41:32.387481Z
+439,Email sent,Left voicemail,2026-05-05T17:41:32.387481Z
+439,Email sent,One-on-one tutoring offered,2026-04-23T17:41:32.389495Z
+440,Meeting scheduled,Left voicemail,2026-04-30T17:41:32.389495Z
+442,Meeting scheduled,,2026-04-08T17:41:32.389495Z
+444,SMS reminder,Escalated to advisor,2026-04-21T17:41:32.389495Z
+449,SMS reminder,One-on-one tutoring offered,2026-04-11T17:41:32.389495Z
+460,SMS reminder,,2026-04-08T17:41:32.389495Z
+461,Email sent,Counseling referral made,2026-05-07T17:41:32.389495Z
+465,Email sent,Escalated to advisor,2026-04-15T17:41:32.389495Z
+468,Email sent,Follow-up scheduled,2026-04-18T17:41:32.389495Z
+471,Meeting scheduled,Left voicemail,2026-04-24T17:41:32.389495Z
+475,SMS reminder,,2026-04-28T17:41:32.389495Z
+477,Email sent,Follow-up scheduled,2026-04-19T17:41:32.389495Z
+478,SMS reminder,Follow-up scheduled,2026-04-25T17:41:32.389495Z
+479,SMS reminder,Left voicemail,2026-04-23T17:41:32.389495Z
+480,Email sent,,2026-04-17T17:41:32.389495Z
+480,Meeting scheduled,Follow-up scheduled,2026-04-12T17:41:32.389495Z
+482,SMS reminder,One-on-one tutoring offered,2026-05-06T17:41:32.389495Z
+485,Meeting scheduled,Counseling referral made,2026-04-09T17:41:32.389495Z
+486,Meeting scheduled,Left voicemail,2026-04-08T17:41:32.389495Z
+487,Call placed,Follow-up scheduled,2026-04-23T17:41:32.389495Z
+487,SMS reminder,One-on-one tutoring offered,2026-04-21T17:41:32.389495Z
+492,Call placed,,2026-04-30T17:41:32.389495Z
+493,Meeting scheduled,Follow-up scheduled,2026-04-13T17:41:32.389495Z
+493,Email sent,Follow-up scheduled,2026-04-16T17:41:32.389495Z
+496,Email sent,One-on-one tutoring offered,2026-04-18T17:41:32.389495Z
+497,Meeting scheduled,Left voicemail,2026-04-15T17:41:32.389495Z
+498,Call placed,Counseling referral made,2026-05-01T17:41:32.389495Z
+499,Call placed,Escalated to advisor,2026-04-17T17:41:32.389495Z
+499,Call placed,Follow-up scheduled,2026-04-21T17:41:32.389495Z
+500,SMS reminder,,2026-04-28T17:41:32.389495Z
